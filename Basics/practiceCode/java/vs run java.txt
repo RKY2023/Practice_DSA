@@ -1,0 +1,8 @@
+===============================================================
+How to Run .java in vs
+Step 1: 
+install vs code extension => "Extension Pack for Java"
+Step 2:
+download & install => https://developers.redhat.com/products/openjdk/download?sc_cid=701f2000000RWTnAAO
+
+===============================================================
