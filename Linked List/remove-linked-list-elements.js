@@ -1,4 +1,7 @@
 // https://leetcode.com/problems/remove-linked-list-elements/
+
+// EASY
+
 var removeElements = function(head, val) {
     let dummy = new ListNode();
     dummy.next = head;
