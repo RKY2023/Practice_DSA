@@ -5,15 +5,14 @@ class Solution {
   checkTriplet(arr,n){
       //code here
       const squares = new Set(arr.map(num => num * num));
-    
-        for (let i = 0; i < n; i++) {
-            for (let j = i + 1; j < n; j++) {
-                const sumOfSquares = arr[i] * arr[i] + arr[j] * arr[j];
-                if (squares.has(sumOfSquares)) {
-                    return true; // Found a Pythagorean triplet
-                }
-            }
-        }
+      for (let a of squares) {
+          for (let b of squares) {
+              if (squares.has(a + b)) {
+                  return true; // Found a Pythagorean triplet
+              }
+          }
+      }
+      return false;
 
         // arr = arr.map((num) => num * num);
         // arr.sort((a,b) => a-b);
