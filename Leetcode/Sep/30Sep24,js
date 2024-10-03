@@ -1,0 +1,46 @@
+// https://leetcode.com/problems/design-a-stack-with-increment-operation/?envType=daily-question&envId=2024-09-30
+
+/**
+ * @param {number} maxSize
+ */
+var CustomStack = function(maxSize) {
+  this.stk = [];
+  this.size = maxSize;
+};
+
+/** 
+* @param {number} x
+* @return {void}
+*/
+CustomStack.prototype.push = function(x) {
+  if(this.stk.length < this.size) {
+      this.stk.push(x);
+  }
+};
+
+/**
+* @return {number}
+*/
+CustomStack.prototype.pop = function() {
+  return this.stk.length === 0 ? -1 : this.stk.pop();
+};
+
+/** 
+* @param {number} k 
+* @param {number} val
+* @return {void}
+*/
+CustomStack.prototype.increment = function(k, val) {
+  // this.stk = this.stk.map((i,v) => i<k? v+val: v)
+  for(let i =0; i < Math.min(k, this.stk.length); i++) {
+      this.stk[i] += val;
+  }
+};
+
+/** 
+* Your CustomStack object will be instantiated and called as such:
+* var obj = new CustomStack(maxSize)
+* obj.push(x)
+* var param_2 = obj.pop()
+* obj.increment(k,val)
+*/
