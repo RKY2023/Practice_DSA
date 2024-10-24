@@ -1,44 +1,44 @@
-// C++ program to demonstrate various function of
-// unordered_set
-#include <bits/stdc++.h>
-using namespace std;
+// // C++ program to demonstrate various function of
+// // unordered_set
+// #include <bits/stdc++.h>
 
-int main()
-{
-    // declaring set for storing string data-type
-    unordered_set<string> stringSet;
 
-    // inserting various string, same string will be stored
-    // once in set
+// int main()
+// {
+//     // declaring set for storing string data-type
+//     unordered_set<string> stringSet;
 
-    stringSet.insert("code");
-    stringSet.insert("in");
-    stringSet.insert("c++");
-    stringSet.insert("is");
-    stringSet.insert("fast");
+//     // inserting various string, same string will be stored
+//     // once in set
 
-    string key = "slow";
+//     stringSet.insert("code");
+//     stringSet.insert("in");
+//     stringSet.insert("c++");
+//     stringSet.insert("is");
+//     stringSet.insert("fast");
 
-    // find returns end iterator if key is not found,
-    // else it returns iterator to that key
-    cout << *(stringSet.end()-1) << endl;
+//     string key = "slow";
 
-    // if (stringSet.find(key) == stringSet.end())
-    //     cout << key << " not found" << endl << endl;
-    // else
-    //     cout << "Found " << key << endl << endl;
+//     // find returns end iterator if key is not found,
+//     // else it returns iterator to that key
+//     cout << *(stringSet.end()) << endl;
 
-    // key = "c++";
-    // if (stringSet.find(key) == stringSet.end())
-    //     cout << key << " not found\n";
-    // else
-    //     cout << "Found " << key << endl;
+//     // if (stringSet.find(key) == stringSet.end())
+//     //     cout << key << " not found" << endl << endl;
+//     // else
+//     //     cout << "Found " << key << endl << endl;
 
-    // // now iterating over whole set and printing its
-    // // content
-    // cout << "\nAll elements : ";
-    // unordered_set<string>::iterator itr;
-    // for (itr = stringSet.begin(); itr != stringSet.end();
-    //      itr++)
-    //     cout << (*itr) << endl;
-}
+//     // key = "c++";
+//     // if (stringSet.find(key) == stringSet.end())
+//     //     cout << key << " not found\n";
+//     // else
+//     //     cout << "Found " << key << endl;
+
+//     // // now iterating over whole set and printing its
+//     // // content
+//     // cout << "\nAll elements : ";
+//     // unordered_set<string>::iterator itr;
+//     // for (itr = stringSet.begin(); itr != stringSet.end();
+//     //      itr++)
+//     //     cout << (*itr) << endl;
+// }
