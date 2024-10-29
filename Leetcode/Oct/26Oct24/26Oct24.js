@@ -131,7 +131,3 @@ var trans = function (root, height, hm) {
   }
   return max;
 }
-
-
-tundra vs falcon  - 16 mk vs bh 
-
